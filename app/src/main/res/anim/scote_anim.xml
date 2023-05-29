@@ -1,38 +1,16 @@
 <set xmlns:android="http://schemas.android.com/apk/res/android"
     android:fillAfter="true">
 
-    <!-- Анимация движения кнопки вправо -->
     <translate
         android:duration="1000"
+        android:startOffset="2000"
         android:fromXDelta="0%"
         android:toXDelta="100%"/>
 
-    <!-- Анимация движения кнопки в центр экрана -->
+    <!-- Анимация движения кнопки вправо -->
     <translate
         android:duration="1000"
-        android:startOffset="1000"
         android:fromXDelta="-100%"
-        android:toXDelta="0%"/>
-
-    <!-- Анимация масштабирования кнопки -->
-    <scale
-        android:duration="500"
-        android:startOffset="2000"
-        android:fromXScale="1.0"
-        android:fromYScale="1.0"
-        android:toXScale="1.5"
-        android:toYScale="1.5"
-        android:pivotX="50%"
-        android:pivotY="50%"/>
-
-    <scale
-        android:duration="500"
-        android:startOffset="2500"
-        android:fromXScale="1.5"
-        android:fromYScale="1.5"
-        android:toXScale="1.0"
-        android:toYScale="1.0"
-        android:pivotX="50%"
-        android:pivotY="50%"/>
+        android:toXDelta="0"/>
 
 </set>
