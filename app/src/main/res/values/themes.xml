@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Cafe2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/Button</item>
+        <item name="colorOnPrimary">@color/Background</item>
+        <item name="colorSecondary">@color/Text</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/Button</item>
+        <!-- Customize your theme here. -->
+        <item name="textFillColor">@color/Text</item>
+        <item name="android:textColor">@color/Text</item>
+        <item name="android:background">@color/Background</item>
+        <item name="android:button">@color/Button</item>
+    </style>
+    <style name="Theme.Cafe2.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Cafe2.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Cafe2.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
