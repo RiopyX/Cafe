@@ -8,6 +8,7 @@
 
 
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#00FFFFFF">
@@ -22,17 +23,146 @@
                 android:layout_height="match_parent">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:id="@+id/linearLayout"
+                    android:layout_width="405dp"
+                    android:layout_height="1399dp"
+                    android:background="#00FFFFFF"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
                     <ImageView
-                        android:id="@+id/imageView"
+                        android:id="@+id/imageView2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="157dp"
+                        android:layout_weight="1"
+                        android:background="@color/blue"
+                        app:srcCompat="?attr/listChoiceBackgroundIndicator" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="157dp"
+                        android:layout_weight="1"
                         android:background="@color/Cats"
-                        app:srcCompat="?attr/actionBarDivider" />
+                        app:srcCompat="?attr/listChoiceBackgroundIndicator" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="157dp"
+                        android:layout_weight="1"
+                        android:background="@color/brown"
+                        app:srcCompat="?attr/listChoiceBackgroundIndicator" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="157dp"
+                        android:layout_weight="1"
+                        android:background="@color/green"
+                        app:srcCompat="?attr/listChoiceBackgroundIndicator" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="157dp"
+                        android:layout_weight="1"
+                        android:background="@color/pink"
+                        app:srcCompat="?attr/listChoiceBackgroundIndicator" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="195dp"
+                        android:layout_weight="1"
+                        android:background="@color/valentine"
+                        app:srcCompat="?android:attr/activatedBackgroundIndicator" />
+
                 </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="414dp"
+                    android:layout_height="1361dp"
+                    android:background="#00FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageButton
+                        android:id="@+id/btnBlue"
+                        android:layout_width="163dp"
+                        android:layout_height="223dp"
+                        android:background="#00FFFFFF"
+                        android:onClick="onClickBlue"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/scote_blue"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/btnCats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:onClick="onClickCats"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnBlue"
+                        app:srcCompat="@drawable/scote_cats"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/btnBrown"
+                        android:layout_width="194dp"
+                        android:layout_height="216dp"
+                        android:background="#00FFFFFF"
+                        android:onClick="onClickBrown"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnCats"
+                        app:srcCompat="@drawable/scote_brown"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/btnGreen"
+                        android:layout_width="245dp"
+                        android:layout_height="231dp"
+                        android:background="#00FFFFFF"
+                        android:onClick="onClickGreen"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnBrown"
+                        app:srcCompat="@drawable/scote_green"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/btnValentine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:onClick="onClickValentine"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnGreen"
+                        app:srcCompat="@drawable/scote_valentine" />
+
+                    <ImageButton
+                        android:id="@+id/btnPink"
+                        android:layout_width="223dp"
+                        android:layout_height="219dp"
+                        android:background="#00FFFFFF"
+                        android:onClick="onClickPink"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnValentine"
+                        app:srcCompat="@drawable/scote_pink" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
